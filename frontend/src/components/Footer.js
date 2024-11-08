@@ -28,18 +28,23 @@ const Footer = () => {
 
     return (
         <footer style={styles.footer}>
-            <Link to="/about" style={styles.link} onMouseEnter={(e) => e.target.style.color = styles.linkHover.color} onMouseLeave={(e) => e.target.style.color = styles.link.color}>
-                About Us
-            </Link>
-            <Link to="/educational-resources" style={styles.link} onMouseEnter={(e) => e.target.style.color = styles.linkHover.color} onMouseLeave={(e) => e.target.style.color = styles.link.color}>
-                Educational Resources
-            </Link>
-            <Link to="/contact" style={styles.link} onMouseEnter={(e) => e.target.style.color = styles.linkHover.color} onMouseLeave={(e) => e.target.style.color = styles.link.color}>
-                Contact Us
-            </Link>
-            <Link to="/feedback" style={styles.link} onMouseEnter={(e) => e.target.style.color = styles.linkHover.color} onMouseLeave={(e) => e.target.style.color = styles.link.color}>
-                Feedback
-            </Link>
+            <div class="Links">
+                <Link to="/about" style={styles.link} onMouseEnter={(e) => e.target.style.color = styles.linkHover.color} onMouseLeave={(e) => e.target.style.color = styles.link.color}>
+                    About Us
+                </Link>
+                <Link to="/educational-resources" style={styles.link} onMouseEnter={(e) => e.target.style.color = styles.linkHover.color} onMouseLeave={(e) => e.target.style.color = styles.link.color}>
+                    Educational Resources
+                </Link>
+                <Link to="/contact" style={styles.link} onMouseEnter={(e) => e.target.style.color = styles.linkHover.color} onMouseLeave={(e) => e.target.style.color = styles.link.color}>
+                    Contact Us
+                </Link>
+                <Link to="/feedback" style={styles.link} onMouseEnter={(e) => e.target.style.color = styles.linkHover.color} onMouseLeave={(e) => e.target.style.color = styles.link.color}>
+                    Feedback
+                </Link>
+            </div>
+            <div className="container">
+                <p>© 2024 Varicose Veins Detection using YOLO | All Rights Reserved</p>
+            </div>
         </footer>
     );
 };

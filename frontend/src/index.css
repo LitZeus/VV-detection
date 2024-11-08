@@ -1,16 +1,59 @@
+/* index.css */
+
+/* Tailwind CSS Base Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset Default Margin & Padding */
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f8f9fa; /* Light background for a clean look */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Code Font Style */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+/* Custom Navbar Styling */
+.navbar {
+  background-color: #007bff; /* Bootstrap Primary Color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Link Styles */
+.navbar-nav .nav-link {
+  color: white !important; /* Make navbar links white */
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e2e6ea !important; /* Slightly lighter color on hover */
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #343a40; /* Dark footer */
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Main Content Area Styling */
+.content {
+  padding: 20px;
+}
+
+/* Responsive Utility Classes (using Tailwind) */
+@media (min-width: 768px) {
+  .content {
+    padding: 40px;
+  }
+}
