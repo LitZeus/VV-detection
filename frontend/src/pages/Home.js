@@ -1,19 +1,18 @@
-import React from 'react'
-import  TypeWriter from '../components/TypeWriter'
-import { FloatingDockDemo } from '../components/FloatingDock'
-import ImageUpload from '../components/ImageUpload'
-//import Footer from '../components/Footer'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/Home.css';
 
 function Home() {
   return (
-    <>
-        <TypeWriter speed={200}/>
-        <ImageUpload />
-        
-  
-        <FloatingDockDemo />
-    </>
-  )
+    <div className="home-container d-flex flex-column align-items-center justify-content-center vh-100 bg-light">
+      <h1 className="text-primary">Welcome to Varicose Veins Detection using YOLO</h1>
+      <p className="lead">A Deep Learning Approach for Early Detection of Varicose Veins</p>
+      <div className="mt-4">
+        <Link to="/login" className="btn btn-primary mx-2">Login</Link>
+        <Link to="/signup" className="btn btn-outline-secondary mx-2">Signup</Link>
+      </div>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
