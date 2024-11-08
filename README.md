@@ -116,10 +116,14 @@ pytest
 * * *
 
 License
--------
+---
 
 This project is licensed under the **Proprietary License**. It is intended for approved users only and cannot be redistributed or used without permission.
 
-For any inquiries or access requests, please contact the project administrator.
+For any inquiries, access requests, or issues related to the project, please contact the project administrator via GitHub Issues or directly at:
+
+- Email: [<me.tejasathalye@gmail.com>](mailto:me.tejasathalye@gmail.com)
+
+All rights reserved.
 
 * * *
