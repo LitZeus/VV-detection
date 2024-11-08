@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-import Form from 'react-bootstrap/Form';
+import React, { useState } from 'react';
+import { Alert, Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
-import { Container, Alert } from 'react-bootstrap';
+import Form from 'react-bootstrap/Form';
+import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -133,6 +133,10 @@ const Signup = () => {
           </Button>
         </Form>
       </div>
+
+      <footer className="mt-auto text-center py-3">
+      </footer>
+      
     </Container>
   );
 };

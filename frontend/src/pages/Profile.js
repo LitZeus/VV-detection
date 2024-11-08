@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Card, ListGroup } from 'react-bootstrap';
+import { Button, Card, Container, ListGroup } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
 
 const Profile = () => {
   const [userDetails, setUserDetails] = useState({});
   const [previousRecords, setPreviousRecords] = useState([]);
+  const navigate = useNavigate(); // Initialize navigate hook for redirection
 
   useEffect(() => {
+    // Get stored user details from localStorage
     const storedUserDetails = JSON.parse(localStorage.getItem('userDetails'));
     if (storedUserDetails) {
       setUserDetails(storedUserDetails);
     }
 
-    // Simulate fetching previous records (or fetch from API if available)
+    // Simulate fetching previous records (you can replace this with an API call)
     const records = [
       { id: 1, date: '2023-10-01', result: 'Normal' },
       { id: 2, date: '2023-09-21', result: 'Mild Issues' },
@@ -19,6 +22,11 @@ const Profile = () => {
     ];
     setPreviousRecords(records);
   }, []);
+
+  // Function to handle the "Test" button click and navigate to the ImageCapture page
+  const handleTestClick = () => {
+    navigate('/image-capture');
+  };
 
   return (
     <Container className="d-flex flex-column align-items-center mt-5">
@@ -52,7 +60,18 @@ const Profile = () => {
           )}
         </Card.Body>
       </Card>
+
+      {/* Add the "Test" button to redirect to ImageCapture.js */}
+      <Button className="mt-4" variant="success" onClick={handleTestClick}>
+        Test
+      </Button>
+
+      {/* Footer */}
+      <footer className="mt-auto text-center py-3">
+      </footer>
+
     </Container>
+    
   );
 };
 

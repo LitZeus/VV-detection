@@ -1,0 +1,25 @@
+/* Ensure the navbar takes up the full width */
+.navbar {
+    width: 100%;
+  }
+  
+  /* Centering the navbar-brand within the container */
+  .navbar-brand {
+    text-align: center;
+    font-size: 1.8rem; /* You can adjust the font size */
+    font-weight: bold; /* Make the font bold */
+  }
+  
+  /* Ensures the container inside the navbar takes full width */
+  .navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Optional: Adjust the navbar background color and padding for better appearance */
+  .navbar-dark.bg-primary {
+    background-color: #007bff; /* Adjust this color as needed */
+    padding: 0.8rem 0; /* Adjust the top and bottom padding */
+  }
+  
