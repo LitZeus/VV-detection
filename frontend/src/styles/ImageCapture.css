@@ -1,4 +1,3 @@
-/* ImageCapture.css */
 .hero {
   display: flex;
   flex-direction: column;
@@ -34,16 +33,16 @@
 
 .option-buttons {
   display: flex;
-  justify-content: space-between;  /* Space out the buttons evenly */
-  gap: 10px;  /* Adds spacing between the buttons */
-  width: 100%;  /* Make the buttons take up full width */
-  max-width: 400px;  /* Limit the width of the button container */
-  margin: 0 auto;  /* Center the button container */
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .option-buttons button,
 .option-buttons label {
-  width: 48%;  /* Ensure both buttons have equal width */
+  width: 48%;
   font-size: 1rem;
   padding: 10px;
 }
@@ -78,8 +77,8 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the content */
-  text-align: center;  /* Ensure text is centered */
+  align-items: center;
+  text-align: center;
 }
 
 .upload-section p {
@@ -91,7 +90,6 @@
   display: none;
 }
 
-/* Ensure the 'Capture Image' button also spans full width if needed */
 .full-width-btn {
-  width: 200px;  /* Ensuring same width as other buttons */
+  width: 200px;
 }

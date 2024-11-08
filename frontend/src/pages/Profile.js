@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Container, ListGroup } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
+import { useNavigate } from 'react-router-dom';
 
 const Profile = () => {
   const [userDetails, setUserDetails] = useState({});
   const [previousRecords, setPreviousRecords] = useState([]);
-  const navigate = useNavigate(); // Initialize navigate hook for redirection
+  const navigate = useNavigate();
 
   useEffect(() => {
-    // Get stored user details from localStorage
     const storedUserDetails = JSON.parse(localStorage.getItem('userDetails'));
     if (storedUserDetails) {
       setUserDetails(storedUserDetails);
@@ -23,7 +22,6 @@ const Profile = () => {
     setPreviousRecords(records);
   }, []);
 
-  // Function to handle the "Test" button click and navigate to the ImageCapture page
   const handleTestClick = () => {
     navigate('/image-capture');
   };
@@ -61,9 +59,9 @@ const Profile = () => {
         </Card.Body>
       </Card>
 
-      {/* Add the "Test" button to redirect to ImageCapture.js */}
+      {/* "Test" button */}
       <Button className="mt-4" variant="success" onClick={handleTestClick}>
-        Test
+        Go to test
       </Button>
 
       {/* Footer */}

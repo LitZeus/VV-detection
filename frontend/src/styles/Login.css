@@ -1,19 +1,18 @@
-/* Center the login form */
 .login-container {
-    min-height: 100vh; /* Full height of the viewport */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f7f7f7; /* Light background for the whole page */
+    background-color: #f7f7f7;
   }
   
   .login-box {
-    background-color: white; /* White background for the box */
+    background-color: white;
     padding: 30px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px; /* Max width of the login box */
+    max-width: 400px;
   }
   
   h2 {
@@ -23,12 +22,12 @@
   }
   
   .form-control {
-    border-radius: 8px; /* Rounded input fields */
+    border-radius: 8px;
     margin-bottom: 15px;
   }
   
   button {
-    border-radius: 8px; /* Rounded button */
+    border-radius: 8px;
   }
   
   .footer-text {

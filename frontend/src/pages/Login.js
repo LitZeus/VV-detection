@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button'; // Import Button from React Bootstrap
+import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
 
 function Login() {
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -48,7 +48,7 @@ function Login() {
           <button type="submit" className="btn btn-primary w-100">Login</button>
         </form>
         
-        {/* Add "Don't have an account?" button */}
+        {/* Sign up */}
         <Button 
           variant="link" 
           onClick={() => navigate('/signup')} 

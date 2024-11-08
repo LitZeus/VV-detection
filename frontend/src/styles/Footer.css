@@ -1,25 +1,23 @@
-/* Footer styling */
 footer {
-    background-color: #343a40;  /* Dark background */
-    color: white;               /* White text */
-    padding: 20px 0;            /* Vertical padding */
-    position: relative;         /* Ensure footer is positioned relative */
-    bottom: 0;
-    width: 100%;
-    text-align: center;         /* Center the text */
-  }
-  
-  footer p {
-    margin: 0;                  /* Remove default margin */
-    font-size: 14px;            /* Adjust font size */
-  }
-  
-  footer a {
-    color: #ffcc00;             /* Gold color for links */
-    text-decoration: none;      /* Remove underline */
-  }
-  
-  footer a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
-  
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
