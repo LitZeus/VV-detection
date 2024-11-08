@@ -11,6 +11,10 @@ function Home() {
         <Link to="/login" className="btn btn-primary mx-2">Login</Link>
         <Link to="/signup" className="btn btn-outline-secondary mx-2">Signup</Link>
       </div>
+      
+      {/* Footer */}
+      <footer className="mt-auto text-center py-3">
+      </footer>
     </div>
   );
 }

@@ -1,0 +1,80 @@
+/* About Us Container */
+.about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Section Styling */
+  .about-us-section {
+    margin-bottom: 2rem;
+  }
+  
+  /* Team Grid */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  /* Team Member Card */
+  .team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile Image */
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  /* Rating Container */
+  .rating-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Star Rating */
+  .star {
+    cursor: pointer;
+    transition: color 200ms;
+  }
+  
+  /* Textarea */
+  .textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Contact Details */
+  .contact-details {
+    text-align: center;
+  }
+  
+  /* Contact Item */
+  .contact-item {
+    margin-bottom: 1rem;
+  }
+  

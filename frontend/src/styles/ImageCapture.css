@@ -1,0 +1,21 @@
+.capture-or-upload-container {
+    margin-top: 50px;
+  }
+  
+  .option-buttons button {
+    width: 200px;
+  }
+  
+  .camera-section button {
+    width: 200px;
+  }
+  
+  .upload-section input {
+    width: 200px;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  

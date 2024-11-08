@@ -1,52 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Assuming you're using React Router for navigation
+import { Col, Container, Row } from 'react-bootstrap';
 
 const Footer = () => {
-    const styles = {
-        footer: {
-            backgroundColor: '#282c34',
-            color: 'white',
-            padding: '1rem',
-            display: 'flex',
-            justifyContent: 'space-around',
-            alignItems: 'center',
-            position: 'relative',
-            bottom: 0,
-            width: '100%',
-            zIndex: 100,
-        },
-        link: {
-            color: 'white',
-            textDecoration: 'none',
-            margin: '0 15px',
-            transition: 'color 0.3s',
-        },
-        linkHover: {
-            color: '#61dafb',
-        },
-    };
-
-    return (
-        <footer style={styles.footer}>
-            <div class="Links">
-                <Link to="/about" style={styles.link} onMouseEnter={(e) => e.target.style.color = styles.linkHover.color} onMouseLeave={(e) => e.target.style.color = styles.link.color}>
-                    About Us
-                </Link>
-                <Link to="/educational-resources" style={styles.link} onMouseEnter={(e) => e.target.style.color = styles.linkHover.color} onMouseLeave={(e) => e.target.style.color = styles.link.color}>
-                    Educational Resources
-                </Link>
-                <Link to="/contact" style={styles.link} onMouseEnter={(e) => e.target.style.color = styles.linkHover.color} onMouseLeave={(e) => e.target.style.color = styles.link.color}>
-                    Contact Us
-                </Link>
-                <Link to="/feedback" style={styles.link} onMouseEnter={(e) => e.target.style.color = styles.linkHover.color} onMouseLeave={(e) => e.target.style.color = styles.link.color}>
-                    Feedback
-                </Link>
-            </div>
-            <div className="container">
-                <p>© 2024 Varicose Veins Detection using YOLO | All Rights Reserved</p>
-            </div>
-        </footer>
-    );
+  return (
+    <footer className="mt-auto py-3 bg-dark text-white">
+      <Container>
+        <Row>
+          <Col className="text-center">
+            <p>&copy; {new Date().getFullYear()} Varicose Veins Detection using YOLO. All Rights Reserved.</p>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
+  );
 };
 
 export default Footer;
