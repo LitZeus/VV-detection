@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button'; // Import Button from React Bootstrap
 import { useNavigate } from 'react-router-dom';
+import '../styles/Login.css';
 
 function Login() {
   const navigate = useNavigate(); // Initialize the navigate function
@@ -20,9 +21,9 @@ function Login() {
   };
 
   return (
-    <div className="container min-vh-100 d-flex flex-column">
-      <div className="flex-grow-1">
-        <h2 className="text-center mt-5">Login to Your Account</h2>
+    <div className="container min-vh-100 d-flex justify-content-center align-items-center">
+      <div className="login-box">
+        <h2 className="text-center mt-4">Login to Your Account</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label>Email</label>
@@ -47,7 +48,7 @@ function Login() {
           <button type="submit" className="btn btn-primary w-100">Login</button>
         </form>
         
-        {/* Add "Already have an account?" button */}
+        {/* Add "Don't have an account?" button */}
         <Button 
           variant="link" 
           onClick={() => navigate('/signup')} 
@@ -56,11 +57,6 @@ function Login() {
           Don't have an account? Sign up
         </Button>
       </div>
-      
-      {/* Footer */}
-      <footer className="mt-auto text-center py-3">
-        <p>&copy; 2024 Your Company</p>
-      </footer>
     </div>
   );
 }

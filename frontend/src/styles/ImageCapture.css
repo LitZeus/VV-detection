@@ -1,21 +1,97 @@
+/* ImageCapture.css */
+.hero {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
 .capture-or-upload-container {
-    margin-top: 50px;
-  }
-  
-  .option-buttons button {
-    width: 200px;
-  }
-  
-  .camera-section button {
-    width: 200px;
-  }
-  
-  .upload-section input {
-    width: 200px;
-  }
-  
-  .img-fluid {
-    max-width: 100%;
-    height: auto;
-  }
-  
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+}
+
+.card h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.option-buttons {
+  display: flex;
+  justify-content: space-between;  /* Space out the buttons evenly */
+  gap: 10px;  /* Adds spacing between the buttons */
+  width: 100%;  /* Make the buttons take up full width */
+  max-width: 400px;  /* Limit the width of the button container */
+  margin: 0 auto;  /* Center the button container */
+}
+
+.option-buttons button,
+.option-buttons label {
+  width: 48%;  /* Ensure both buttons have equal width */
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.button-style {
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.open-camera-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.open-camera-btn:hover {
+  background-color: #0056b3;
+}
+
+.choose-image-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.choose-image-btn:hover {
+  background-color: #218838;
+}
+
+.upload-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content */
+  text-align: center;  /* Ensure text is centered */
+}
+
+.upload-section p {
+  margin-bottom: 10px;
+}
+
+/* Hide the actual file input */
+.upload-section input[type="file"] {
+  display: none;
+}
+
+/* Ensure the 'Capture Image' button also spans full width if needed */
+.full-width-btn {
+  width: 200px;  /* Ensuring same width as other buttons */
+}

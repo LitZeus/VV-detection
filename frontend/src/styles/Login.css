@@ -1,0 +1,40 @@
+/* Center the login form */
+.login-container {
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7; /* Light background for the whole page */
+  }
+  
+  .login-box {
+    background-color: white; /* White background for the box */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 400px; /* Max width of the login box */
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-control {
+    border-radius: 8px; /* Rounded input fields */
+    margin-bottom: 15px;
+  }
+  
+  button {
+    border-radius: 8px; /* Rounded button */
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+  }
+  
