@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import '../styles/ImageCapture.css';
 
 function ImageCapture() {
   const [image, setImage] = useState(null);
-  const [isCamera, setIsCamera] = useState(false);
   const [cameraStream, setCameraStream] = useState(null);
-  const navigate = useNavigate();
 
   const handleFileUpload = (e) => {
     const file = e.target.files[0];
