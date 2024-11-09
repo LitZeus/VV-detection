@@ -93,7 +93,7 @@ The backend of this project is designed to process the uploaded or captured imag
     
     ```bash
     pip install -r requirements.txt
-     ```    
+     ```
 
 ### Running the Backend
 
