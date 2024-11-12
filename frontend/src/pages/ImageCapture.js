@@ -4,7 +4,6 @@ import '../styles/ImageCapture.css';
 
 function ImageCapture() {
   const [image, setImage] = useState(null);
-  const [isCamera, setIsCamera] = useState(false);
   const [cameraStream, setCameraStream] = useState(null);
   const videoRef = useRef(null); // For referencing the video element directly
   const navigate = useNavigate();

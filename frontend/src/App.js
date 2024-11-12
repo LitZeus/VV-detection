@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import ImageCapture from './pages/ImageCapture';
 import Login from './pages/Login';
+import NotFound from './pages/NotFound';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup';
 import './styles/App.css';
@@ -22,6 +23,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/image-capture" element={<ImageCapture />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
