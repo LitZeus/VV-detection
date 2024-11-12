@@ -93,3 +93,33 @@
 .full-width-btn {
   width: 200px;
 }
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.delete-image-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: red;
+  cursor: pointer;
+}
+
+.delete-icon {
+  font-weight: bold;
+}
+
+.btn-danger {
+  margin-top: 10px;
+}

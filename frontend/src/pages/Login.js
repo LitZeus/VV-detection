@@ -21,7 +21,7 @@ function Login() {
   };
 
   return (
-    <div className="container min-vh-100 d-flex justify-content-center align-items-center">
+    <div className="container vh-100 d-flex justify-content-center align-items-center">
       <div className="login-box">
         <h2 className="text-center mt-4">Login to Your Account</h2>
         <form onSubmit={handleSubmit}>

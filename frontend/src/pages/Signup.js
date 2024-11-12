@@ -4,6 +4,7 @@ import { Alert, Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useNavigate } from 'react-router-dom';
+import '../styles/Signup.css';
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -25,28 +26,30 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let uploadUrl;
+    let signupUrl;
 
+    // Check if the app is running on mobile or desktop to choose the correct URL
     if (/Mobi|Android/i.test(navigator.userAgent)) {
-      uploadUrl = 'http://192.168.31.178:5000/signup'; 
+      signupUrl = 'http://192.168.31.178:5000/api/auth/signup';  // Change to the IP address of your local machine if testing on mobile
     } else {
-      uploadUrl = 'http://localhost:5000/signup';
+      signupUrl = 'http://localhost:5000/api/auth/signup';  // For local testing
     }
 
     try {
-      const response = await axios.post(uploadUrl, formData);
+      const response = await axios.post(signupUrl, formData);
       console.log('Signup response:', response.data);
-      navigate('/login'); 
+      navigate('/login');  // Navigate to the login page after successful signup
     } catch (error) {
-      console.error('Error during signup:', error.response.data);
-      setErrorMessage(error.response.data.message); 
+      console.error('Error during signup:', error.response?.data || error.message);
+      // Display the error message from backend
+      setErrorMessage(error.response?.data?.message || 'An error occurred during signup');
     }
   };
 
   return (
-    <Container className="d-flex justify-content-center align-items-center min-vh-100 px-3">
-      <div className="w-100" style={{ maxWidth: '400px' }}>
-        <h2 className="text-center">Signup</h2>
+    <Container className="signup-container">
+      <div className="signup-box">
+        <h2>Signup</h2>
 
         {errorMessage && ( 
           <Alert variant="danger" className="mb-3">
@@ -90,13 +93,17 @@ const Signup = () => {
           
           <Form.Group className="mb-3" controlId="formGender">
             <Form.Label>Gender</Form.Label>
-            <Form.Control
-              type="text"
+            <Form.Select
               name="gender"
-              placeholder="Enter your gender"
-              required
+              value={formData.gender}
               onChange={handleChange}
-            />
+              required
+            >
+              <option value="">Select your gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </Form.Select>
           </Form.Group>
           
           <Form.Group className="mb-3" controlId="formCity">
@@ -133,10 +140,6 @@ const Signup = () => {
           </Button>
         </Form>
       </div>
-
-      <footer className="mt-auto text-center py-3">
-      </footer>
-      
     </Container>
   );
 };

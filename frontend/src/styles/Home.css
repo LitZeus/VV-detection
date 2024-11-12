@@ -1,5 +1,24 @@
 .home-container {
-    text-align: center;
-    background-color: #f8f9fa;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 74.1vh;  /* Ensures the container takes up the full viewport height */
+  text-align: center;
+  background-color: #f8f9fa;
+  margin: 0; /* Ensures no margin around the container */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.lead {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+button {
+  border-radius: 8px;
+}

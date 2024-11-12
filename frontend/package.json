@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "varicose-detection",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -31,7 +31,6 @@
       "react-app",
       "react-app/jest"
     ]
-    
   },
   "browserslist": {
     "production": [

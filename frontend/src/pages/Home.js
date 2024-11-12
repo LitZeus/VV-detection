@@ -4,7 +4,7 @@ import '../styles/Home.css';
 
 function Home() {
   return (
-    <div className="home-container d-flex flex-column align-items-center justify-content-center vh-100 bg-light">
+    <div className="home-container d-flex flex-column align-items-center justify-content-center">
       <h1 className="text-primary">Welcome to Varicose Veins Detection using YOLO</h1>
       <p className="lead">A Deep Learning Approach for Early Detection of Varicose Veins</p>
       <div className="mt-4">
@@ -14,6 +14,7 @@ function Home() {
       
       {/* Footer */}
       <footer className="mt-auto text-center py-3">
+        {/* Add footer content here if needed */}
       </footer>
     </div>
   );
